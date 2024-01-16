@@ -1,0 +1,12 @@
+.picker {
+  margin: 10px;
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none;
+  max-width: 100%;
+  gap: 10px;
+}
+
+.picker::-webkit-scrollbar {
+  display: none;
+}

@@ -1,0 +1,7 @@
+<div class="picker" #horizontalList>
+  <app-timetable-day-picker-item
+    *ngFor="let day of daysOfMonth$ | async"
+    [day]="day"
+    [month]="(selectedMonth$ | async)!"
+    (appDaySelect)="selectDay(day)"></app-timetable-day-picker-item>
+</div>

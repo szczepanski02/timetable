@@ -1,0 +1,4 @@
+<div class="item" [class.active]="isActive | async" (click)="onDaySelect()">
+  <span class="item__day">{{ day }}</span>
+  <span class="item__month">{{ formattedMonth | date: 'MMM' }}</span>
+</div>
